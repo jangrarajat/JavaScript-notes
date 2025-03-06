@@ -199,4 +199,4 @@
              Example -->
                       for (let i = 1; i <= 5; 1++>){
                          console.log("apna college")
-                      }
+                      } rajat
