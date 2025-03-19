@@ -110,3 +110,103 @@
 
       //   Example -->
               
+
+   //  let hero = ["ironman","hulk","spiderman","flash"]
+   //             console.log( hero[3])
+             
+   //             for (let i = 0; i < hero.length ; i++){
+   //                console.log(hero[i])
+   //             }
+
+// arro funcations
+
+   //  const my = (a, b) => {
+   //          return a + b
+   //  }
+
+
+   //  const mymy = () => {
+   //    return"Your Password is worng ";
+
+
+//   function vowels(str){
+//    let count= 0
+//    for (const char of str){
+//      if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u" ){
+//       count++;
+//      }
+//    }
+//    console.log(count)
+//   }
+
+//  let age = prompt("enter your age")
+//  if (age >= 18 ){
+//  console.log("you can vote")
+
+//  }
+//  else{
+//    (age <= 18)
+//   console.log("you cannot vote")
+//  }
+//  let age = prompt("enter your age")
+
+//  let voteAge = (age >= 18) ? "you can vote" : "you can not vote";
+//      console.log(voteAge)
+
+// let age = prompt("typ password")
+//  if (age === "Rajat jangra" ){
+//    console.log(" Curroct Password  ")
+//  }
+//  else{
+//    console.log("Wrong password")
+//  }
+
+// for(let i = 1 ; i <= 10; i++){
+//    console.log("Loop thi working condition")
+// }
+
+
+// // This is for loop
+// for (let i = 1 ; i <= 10 ; i++){
+  
+//    console.log(i)
+// }
+// // break in for loop
+// for (let i = 1 ; i <= 10 ; i++){
+//    if (i == 6)
+//       break ;
+//    else console.log(i)
+// }
+// continue in for loop
+// for (let i = 1 ; i <= 11 ; i++){
+//    if (i ==10 )
+//       continue ;
+//    else console.log(i)
+// }
+
+// let opt1 = 'Diksha ';
+// let opt2 = 'Prachi';
+// let opt3 = 'Jangra';
+
+// // let ans =  `${opt1} ${opt2}`
+// // console.log(opt3.toUpperCase())
+
+// let str = "rajat" ;
+// console.log(str.substring(0 , 4))
+
+// let sent = "hellow \\rajat\\ kase \\ ho \\jldi\\ btaao";
+ 
+// let words = sent.split('\\');
+
+// console.log(words);
+// console.log(words.join('.'))
+// 
+// function
+
+let newfile = ["rajat" , "rohit","hardik" ]
+// newfile.push("Vikey", "rahul")
+// newfile.pop()
+newfile.shift();
+newfile.unshift("raju panjabu");
+console.log(newfile);
+
