@@ -196,7 +196,24 @@
         |_______________________________________|
              : Loops are used to execute a piece of code again & again
 
-             Example -->
-                      for (let i = 1; i <= 5; 1++>){
-                         console.log("apna college")
-                      } 
+            Types of Loop 
+(Basic Loop)
+1 : for        Loop                1 :  for loop --->   for (let i = 1 ; i <=10 ; i++ )
+2 : While      Loop                                            { console.log("This is a for Loop"  }
+3 : do -while  Loop                                                     
+(Advance Loop)                          
+4 : for in     Loop                      Break in Loop ->  for (let i = 1 ; i <=10 ; i++ )
+5 : for each   Loop                                         {if (i == 4)
+6 : for of     Loop                                              break ;
+                                                             else   console.log(i);
+                                                             }                                              
+                                        continue in Loop ->    for (let i = 1 ; i <=10 ; i++ )
+                                                                  {if (i == 4)
+                                                                   continue;
+                                                              else   console.log(i);
+                                                              }
+                                  2 : while loop --->  let i = 1;
+                                                       while(i <= 10) {
+                                                            console.log("hellow world")
+                                                            i++;  
+                                                       }

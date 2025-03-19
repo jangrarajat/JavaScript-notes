@@ -203,10 +203,11 @@
 // 
 // function
 
-let newfile = ["rajat" , "rohit","hardik" ]
-// newfile.push("Vikey", "rahul")
-// newfile.pop()
-newfile.shift();
-newfile.unshift("raju panjabu");
-console.log(newfile);
+// let newfile = ["rajat" , "rohit","hardik" ]
+// // newfile.push("Vikey", "rahul")
+// // newfile.pop()
+// newfile.shift();
+// newfile.unshift("raju panjabu");
+// console.log(newfile);
+
 
