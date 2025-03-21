@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript-Nots</title>
     <style>
-        h1{
+        h1 {
             text-align: center;
         }
-     
-           
-        
-        div{
+
+
+
+        #dot {
             height: 400px;
             width: 300px;
             color: black;
@@ -19,29 +20,61 @@
             font-size: larger;
             position: relative;
             left: 200px;
-            
+            border: 10px dotted rebeccapurple;
+
+        }
+
+        #loder {
+            height: 90px;
+            width: 90px;
+            border-bottom: 13px dashed orangered;
+            border-right: 13px dashed rgba(10, 10, 136, 0.84);
+            border-left: 13px dashed red;
+            border-top: 13px dashed green;
+            margin-left: 100px;
+            border-radius: 50%;
+            animation: mylaoder 2s ease-in-out 0s infinite normal;
+            /* box-shadow: 0px 0px 10px ; */
+
+        }
+
+        @keyframes mylaoder {
+            from {
+                transform: (0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
+
 <body>
     <HEAder>
         <H1>
-               JavaScript  Roadmap
+            JavaScript Roadmap
         </H1>
-      <div>
-        <ul>
-            <li>Variables</li>
-            <li>Operators</li>
-            <li>Loops & Strings</li>
-            <li>Arrays</li>
-            <li>Functions</li>
-            <li>Objects</li>
-            <li>Dom & Events</li>
-            <li>API Calls</li>
-    
-           </ul>
-      </div>
+        <div id="dot">
+            <ul>
+                <li>Variables</li>
+                <li>Operators</li>
+                <li>Loops & Strings</li>
+                <li>Arrays</li>
+                <li>Functions</li>
+                <li>Objects</li>
+                <li>Dom & Events</li>
+                <li>API Calls</li>
+            </ul>
+            <div id="loder"></div>
+        </div>
+
     </HEAder>
+
+
+
+
 </body>
 <script src="/script.js"> </script>
+
 </html>
