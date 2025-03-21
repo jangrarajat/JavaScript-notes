@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript-Nots</title>
     <style>
-        h1 {
+       *{
+        color: white;
+       }
+       h1 {
             text-align: center;
             color: blanchedalmond;
         }
@@ -22,23 +25,36 @@ body{
             font-family: Courier, monospace;
             font-size: larger;
             position: relative;
-            left: 200px;
+            left: 15px;
             border: 10px double rebeccapurple;
+
 
         }
 
-        .loder {
+        #first {
             height: 90px;
             width: 90px;
-            border-bottom: 13px dashed orangered;
-            border-right: 13px  dashed blueviolet;
-            border-left: 13px   dashed yellow;
-            border-top: 13px    dashed green;
+            border-bottom: 13px solid orangered;
+            border-right: 13px  solid blueviolet;
+            border-left: 13px   solid yellow;
+            border-top: 13px    solid green;
             margin-left: 100px;
             border-radius: 50%;
             animation: mylaoder 2s ease-in-out 60ms infinite normal;
-            /* box-shadow: 0px 0px 10px ; */
+            position: relative;
+            left: 0px;
 
+        }
+        #skind {
+            height: 90px;
+            width: 90px;
+            border-bottom: 13px solid orangered;
+            border-right: 13px  solid blueviolet;
+            border-left: 13px   solid yellow;
+            border-top: 13px    solid green;
+            margin-left: 100px;
+            border-radius: 50%;
+            animation: mylaoder 2s ease-in-out 60ms infinite reverse;
         }
 
         @keyframes mylaoder {
@@ -50,23 +66,9 @@ body{
             }
         }
 
-#skind{
-    animation: mylaoder 2s ease-in-out 60ms infinite reverse;
-   position: relative;
-   left: 0px;
-   
-}
 
-        /* #wlod{
-            height: 90px;
-            width: 90px;
-            background-color: black;
-            border-radius: 50%;
-        position: relative;
-        left: 10px;
-        bottom: 100px;
-        } */
-       
+
+
     </style>
 </head>
 
@@ -89,8 +91,8 @@ body{
            
             
         </div>
-        <div class="loder"></div>
-        <div class="loder" id="skind"></div>
+        <div  id="first"></div>
+        <div  id="skind"></div>
 
     </HEAder>
 
