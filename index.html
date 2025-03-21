@@ -8,45 +8,65 @@
     <style>
         h1 {
             text-align: center;
+            color: blanchedalmond;
         }
-
+body{
+    background-color: rgb(30, 27, 27);
+}
 
 
         #dot {
-            height: 400px;
+            height: 200px;
             width: 300px;
             color: black;
             font-family: Courier, monospace;
             font-size: larger;
             position: relative;
             left: 200px;
-            border: 10px dotted rebeccapurple;
+            border: 10px double rebeccapurple;
 
         }
 
-        #loder {
+        .loder {
             height: 90px;
             width: 90px;
             border-bottom: 13px dashed orangered;
-            border-right: 13px dashed rgba(10, 10, 136, 0.84);
-            border-left: 13px dashed red;
-            border-top: 13px dashed green;
+            border-right: 13px  dashed blueviolet;
+            border-left: 13px   dashed yellow;
+            border-top: 13px    dashed green;
             margin-left: 100px;
             border-radius: 50%;
-            animation: mylaoder 2s ease-in-out 0s infinite normal;
+            animation: mylaoder 2s ease-in-out 60ms infinite normal;
             /* box-shadow: 0px 0px 10px ; */
 
         }
 
         @keyframes mylaoder {
             from {
-                transform: (0deg);
+                transform: (0deg);             
             }
-
             to {
                 transform: rotate(360deg);
             }
         }
+
+#skind{
+    animation: mylaoder 2s ease-in-out 60ms infinite reverse;
+   position: relative;
+   left: 0px;
+   
+}
+
+        /* #wlod{
+            height: 90px;
+            width: 90px;
+            background-color: black;
+            border-radius: 50%;
+        position: relative;
+        left: 10px;
+        bottom: 100px;
+        } */
+       
     </style>
 </head>
 
@@ -66,8 +86,11 @@
                 <li>Dom & Events</li>
                 <li>API Calls</li>
             </ul>
-            <div id="loder"></div>
+           
+            
         </div>
+        <div class="loder"></div>
+        <div class="loder" id="skind"></div>
 
     </HEAder>
 
