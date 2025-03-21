@@ -210,4 +210,9 @@
 // newfile.unshift("raju panjabu");
 // console.log(newfile);
 
-
+// function myfung(x,y){
+// let sum = x + y;
+// return sum;
+// }
+//  let ans = myfung(2,10)
+//  console.log(ans)
