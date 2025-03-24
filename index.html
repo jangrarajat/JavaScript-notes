@@ -4,18 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript-Nots</title>
+    <title>JavaScript</title>
     <style>
-       *{
-        color: white;
-       }
-       h1 {
+        * {}
+
+        h1 {
             text-align: center;
             color: blanchedalmond;
         }
-body{
-    background-color: rgb(30, 27, 27);
-}
+
+        body {
+            background-color: orangered;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+
 
 
         #dot {
@@ -25,7 +31,8 @@ body{
             font-family: Courier, monospace;
             font-size: larger;
             position: relative;
-            left: 15px;
+            left: 450px;
+            top: 1px;
             border: 10px double rebeccapurple;
 
 
@@ -35,70 +42,124 @@ body{
             height: 90px;
             width: 90px;
             border-bottom: 13px solid orangered;
-            border-right: 13px  solid blueviolet;
-            border-left: 13px   solid yellow;
-            border-top: 13px    solid green;
+            border-right: 13px solid blueviolet;
+            border-left: 13px solid yellow;
+            border-top: 13px solid green;
             margin-left: 100px;
             border-radius: 50%;
             animation: mylaoder 2s ease-in-out 60ms infinite normal;
             position: relative;
-            left: 0px;
+         }
 
-        }
         #skind {
             height: 90px;
             width: 90px;
             border-bottom: 13px solid orangered;
-            border-right: 13px  solid blueviolet;
-            border-left: 13px   solid yellow;
-            border-top: 13px    solid green;
+            border-right: 13px solid blueviolet;
+            border-left: 13px solid yellow;
+            border-top: 13px solid green;
             margin-left: 100px;
             border-radius: 50%;
-            animation: mylaoder 2s ease-in-out 60ms infinite reverse;
+            animation: mylaoder 2s ease-in-out 60ms infinite normal;
+
+
         }
 
         @keyframes mylaoder {
             from {
-                transform: (0deg);             
+                transform: (0deg);
             }
+
             to {
                 transform: rotate(360deg);
             }
         }
 
+        #skind {
+            animation: mylaoder 2s ease-in-out 60ms infinite reverse;
+            position: relative;
+            left: 0px;
+
+        }
+
+        #btn1 {
+            height: 4rem;
+            width: 4rem;
+            position: relative;
+
+            background-color: green;
+            border: none;
+            /* border-radius: 50%; */
 
 
+        }
 
+        #btn2 {
+            height: 100%;
+            max-height: 4rem;
+            max-width: 4rem;
+            width: 100%;
+            background-color: orangered;
+            color: burlywood;
+            border: none;
+            /* border-radius: 40%; */
+            position: relative;
+
+        }
+
+        #output {
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            position: relative;
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            font-size: 2em;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #msg{
+            border-bottom: 2px solid black;
+            background-color: blue;
+            color: aliceblue;
+        }
+        #input{
+            height: 30px;
+            width: 50%;
+            text-align: center;
+        }
+        #submit{
+            height: 30px;
+            width: 100px;
+            background-color: yellowgreen;
+            border-radius: 10px;
+        }
     </style>
 </head>
 
 <body>
     <HEAder>
-        <H1>
-            JavaScript Roadmap
-        </H1>
-        <div id="dot">
-            <ul>
-                <li>Variables</li>
-                <li>Operators</li>
-                <li>Loops & Strings</li>
-                <li>Arrays</li>
-                <li>Functions</li>
-                <li>Objects</li>
-                <li>Dom & Events</li>
-                <li>API Calls</li>
-            </ul>
-           
-            
+        <h1>
+            JavaScript 
+        </h1>
+        <div id="output">
+            <p>Count of Vowel</p>
+            <p id="msg">Hi?</p>
+            <input id="input" type="text" value="" placeholder="Enter input">
+            <button id="submit" type="submit">Output</button>
         </div>
-        <div  id="first"></div>
-        <div  id="skind"></div>
+   
 
+        
+        <div id="first"></div>
+        <div id="skind"></div>
+        <div class="love"></div>
     </HEAder>
-
-
-
-
+     
+     <button id="btn1">Mode</button>
+   
 </body>
 <script src="/script.js"> </script>
 
