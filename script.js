@@ -280,13 +280,14 @@ let mode = "light"
 btn.onclick = () => {
    if (mode === "light") {
       mode = "dark"
-      document.querySelector("body").style.backgroundColor = "orange"
+      document.querySelector("body").style.backgroundColor = "white"
       document.querySelector("#output").style.backgroundColor = "red"
+
 
    } else {
       mode = "light"
-      document.querySelector("body").style.backgroundColor = "red"
-      document.querySelector("#output").style.backgroundColor = "orange"
+      document.querySelector("body").style.backgroundColor = "black"
+      document.querySelector("#output").style.backgroundColor = "green"
 
    }
 }
@@ -301,7 +302,7 @@ btn.onclick = () => {
 //    let count = 0;
 //    for (const char of latter) {
 //       if (char == "a" || char == "e" || char == "i" || char == "o" || char == "u")
-     
+
 //    count++}
 // msg.innerText = count
 // console.log(count)
@@ -312,27 +313,50 @@ let input = document.querySelector("#input")
 let submit = document.querySelector("#submit")
 
 
-submit.onclick = () =>{
- let inputV = document.querySelector("#input ");
-let inputWord = inputV.value;
- 
-let msg = document.querySelector("#msg")
-    function numchk() {
-       let count = 0;
-       for (const char of inputWord) {
-          if (char == "a" || char == "e" || char == "i" || char == "o" || char == "u" || char == "A" || char == "E" || char == "I" || char == "O" || char == "U")      
-       count++}
-    msg.innerText = count
-    console.log(count)
-    }
-    numchk()
+submit.onclick = () => {
+   let inputV = document.querySelector("#input");
+   let inputWord = inputV.value;
+   let msg = document.querySelector("#msg")
+   function numchk() {
+      let count = 0;
+      for (const char of inputWord) {
+         if (char == "a" || char == "e" || char == "i" || char == "o" || char == "u" || char == "A" || char == "E" || char == "I" || char == "O" || char == "U")
+            count++
+      }
+      msg.innerText = count
+      console.log(count)
+   }
+   numchk()
 }
 
+let notesbtn = document.querySelector("#notes")
+let VoweLbtn = document.querySelector("#VoweL")
+let vowelOutput = document.querySelector("#output")
 
 
+VoweLbtn.onclick = () =>{
+   if (mode === "light") {
+      mode = "dark"
+       console.log("hi")
+      document.querySelector("#output").style.visibility = "hidden";
 
 
+   } else {
+      mode = "light"
+      console.log("hellow")
+      document.querySelector("#output").style.visibility = "visible";
+   }
+}
+
+notesbtn.onclick = () =>{
+   if (mode === "light") {
+      mode = "dark"       
+      document.querySelector(".notes").style.visibility = "hidden";
 
 
-
+   } else {
+      mode = "light"      
+      document.querySelector(".notes").style.visibility = "visible";
+   }
+}
 

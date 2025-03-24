@@ -199,7 +199,7 @@
             Types of Loop 
 (Basic Loop)
 1 : for        Loop                1 :  for loop --->   for (let i = 1 ; i <=10 ; i++ )
-2 : While      Loop                                            { console.log("This is a for Loop"  }
+2 : While      Loop                                            { console.log("This is a for Loop")  }
 3 : do -while  Loop                                                     
 (Advance Loop)                          
 4 : for in     Loop                      Break in Loop ->  for (let i = 1 ; i <=10 ; i++ )
