@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             background-color: rgb(173, 138, 207);
@@ -17,6 +18,7 @@
 
         /* navbar part  */
         .nav {
+            
             height: 50px;
             width: 100%;
             background-color: blueviolet;
@@ -27,18 +29,19 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            gap: 19px;
 
         }
 
         /* mode button  */
         #btn1 {
-            height: 2rem;
-            width: 2rem;
+            height: 0rem;
+            width:  0rem;
             border-radius: 50%;
             position: relative;
-            background-color: blue;
+            /* background-color: blue; */
             border: none;
-            margin-left: 30px;
+            
 
 
         }
@@ -101,6 +104,7 @@
 
 
         }
+      
         }
         @media (min-width:1000px) {
             #input {
@@ -117,19 +121,28 @@
 
 
         }
+       
+      
         }
+
+
 
     </style>
 </head>
 
 <body>
     <div class="nav">
+        <div    class="fa-solid fa-house fa-lg" style="color: #63E6BE;"></div>
+      
         <h2>JavaScript</h2>
-        <button id="btn1" style="justify-self: flex-end;"></button>
+        <div    class="erro1 fa-solid fa-arrow-right fa-flip-horizontal fa-xs" style="color: #FFD43B;"></div><br>
+        <div    class="erro2 fa-solid fa-arrow-right fa-xs" style="color: #FFD43B;"></div>
+        <div id="btn1" class="fa-brands fa-slack fa-2xl" style="color: #63E6BE;" ></div>
     </div>
+
     <div id="output">
         <p id="prjh">Count of Vowel</p>
-
+       
         <p id="msg">Hi?</p>
         <input id="input" type="text" value="" placeholder="Enter input">
         <button id="submit" type="submit">Submit</button>
@@ -138,3 +151,9 @@
 <script src="/script.js"> </script>
 
 </html>
+
+
+
+<i class="fa-solid fa-xmark"></i>
+<i class="fa-solid fa-bars"></i>
+<i class="fa-solid fa-house"></i>
