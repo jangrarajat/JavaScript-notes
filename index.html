@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-            background-color: rgb(173, 138, 207);
+            background-color: rgb(93, 30, 164);
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -16,6 +16,14 @@
             align-items: center;
         }
 
+          #heading{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #3bffd8;
+            text-shadow: chartreuse 0px 0px 10px , 0px 0px 10px , 0px 0px 20px;
+            font-weight: 90000000000;
+            font-style: oblique;
+           font-size: xx-large;
+        }
         /* navbar part  */
         .nav {
             
@@ -50,7 +58,7 @@
 
         /* vowel chaker part  */
         #output {
-            min-height: 585px;
+            min-height: 640px;
             height: fit-content;
             width: 99%;
             
@@ -100,7 +108,7 @@
             text-align: center;
         }
         /* #output {
-            height: 70%;
+            height: 500px;
         } */
 
         #submit {
@@ -137,10 +145,15 @@
             height: 50px;
             width: 100%;
             background-color:blueviolet;
-            position: absolute;
+            position: fixed;
             bottom: 0px;
             left: 0px;
-            
+            z-index: 9;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
         }
 
     </style>
@@ -150,10 +163,7 @@
     <div class="nav">
         <div    class="fa-solid fa-house fa-lg" style="color: #63E6BE;"></div>
       
-        <h2>JavaScript</h2>
-        <div    class="erro1 fa-solid fa-arrow-right fa-flip-horizontal fa-xs" style="color: #FFD43B;"></div>
-        <div  class="fa-solid fa-bars fa-2xl" style="color: #FFD43B;"></i></div>
-        <div    class="erro2 fa-solid fa-arrow-right fa-xs" style="color: #FFD43B;"></div>
+        <h2 id="heading">JavaScript</h2>
         <div id="btn1" class="fa-brands fa-slack fa-2xl" style="color: #63E6BE;" ></div>
     </div>
 
@@ -166,7 +176,9 @@
     </div>
     <footer>
        <div class="footerdiv">
-
+        <div    class="erro1 fa-solid fa-arrow-right fa-flip-horizontal fa-xs" style="color: #FFD43B;"></div>
+        <div  class="fa-solid fa-bars fa-2xl" style="color: #FFD43B;"></i></div>
+        <div    class="erro2 fa-solid fa-arrow-right fa-xs" style="color: #FFD43B;"></div>
        </div>
     </footer>
 </body>

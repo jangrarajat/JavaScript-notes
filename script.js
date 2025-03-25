@@ -281,13 +281,13 @@ btn.onclick = () => {
    if (mode === "light") {
       mode = "dark"
       document.querySelector("body").style.backgroundColor = "white"
-      document.querySelector("#output").style.backgroundColor = "rgb(137, 69, 200)"
+      document.querySelector("#output").style.backgroundColor = "rgb(168, 156, 179)"
 
 
    } else {
       mode = "light"
-      document.querySelector("body").style.backgroundColor = "rgb(173, 138, 207)"
-      // document.querySelector("#output").style.backgroundColor = "darkcyan"
+      document.querySelector("body").style.backgroundColor = "rgb(93, 30, 164)"
+      document.querySelector("#output").style.backgroundColor = "rgb(137, 69, 200)"
 
    }
 }
