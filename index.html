@@ -6,13 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <style>
-        h1 {
-            text-align: center;
-            color: blanchedalmond;
-        }
-
         body {
-            background-color: black;
+            background-color: rgb(173, 138, 207);
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -20,27 +15,44 @@
             align-items: center;
         }
 
+        /* navbar part  */
+        .nav {
+            height: 50px;
+            width: 100%;
+            background-color: blueviolet;
+            position: fixed;
+            top: 0px;
+            color: aliceblue;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
 
+        }
+
+        /* mode button  */
         #btn1 {
-            height: 1rem;
-            width: 4rem;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
             position: relative;
-            background-color: green;
+            background-color: blue;
             border: none;
-
+            margin-left: 30px;
 
 
         }
 
-   
 
+        /* vowel chaker part  */
         #output {
-            height: 300px;
-            width: 300px;
-            border: 2px solid black;
+            height: 500px;
+            width: 80%;
+            
+            border-radius: 50px;
             position: relative;
-            top: 150px;
-            background-color: red;
+            top: 90px;
+            background-color: rgb(137, 69, 200);
             display: flex;
             flex-direction: column;
             font-size: 2em;
@@ -49,6 +61,12 @@
 
         }
 
+        #prjh{
+            font-family:Fantasy ;
+            
+        }
+
+
         #msg {
             border-bottom: 2px solid black;
             color: aliceblue;
@@ -56,31 +74,62 @@
 
         #input {
             height: 30px;
-            width: 50%;
+            width: 40%;
             text-align: center;
         }
 
         #submit {
+            margin-top: 5px;
             height: 30px;
-            width: 100px;
-            background-color: yellowgreen;
-            border-radius: 10px;
+            width: 40%;
+            background-color: skyblue;
+
 
         }
+        @media (max-width:600px) {
+            #input {
+            height: 30px;
+            width: 70%;
+            text-align: center;
+        }
 
-      
- 
+        #submit {
+            margin-top: 5px;
+            height: 30px;
+            width: 70%;
+            background-color: skyblue;
 
-      
+
+        }
+        }
+        @media (min-width:1000px) {
+            #input {
+            height: 30px;
+            width: 30%;
+            text-align: center;
+        }
+
+        #submit {
+            margin-top: 5px;
+            height: 30px;
+            width: 20%;
+            background-color: skyblue;
+
+
+        }
+        }
+
     </style>
 </head>
 
 <body>
-   
+    <div class="nav">
+        <h2>JavaScript</h2>
+        <button id="btn1" style="justify-self: flex-end;"></button>
+    </div>
     <div id="output">
+        <p id="prjh">Count of Vowel</p>
 
-        <p>Count of Vowel</p>
-        <button id="btn1">Mode</button>
         <p id="msg">Hi?</p>
         <input id="input" type="text" value="" placeholder="Enter input">
         <button id="submit" type="submit">Submit</button>
