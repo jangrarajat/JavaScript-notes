@@ -345,6 +345,7 @@ VoweLbtn.onclick = () =>{
       mode = "light"
       console.log("hellow")
       document.querySelector("#output").style.visibility = "visible";
+      document.querySelector(".notes").style.visibility = "hidden";
    }
 }
 
@@ -357,6 +358,7 @@ notesbtn.onclick = () =>{
    } else {
       mode = "light"      
       document.querySelector(".notes").style.visibility = "visible";
+      document.querySelector("#output").style.visibility = "hidden";
    }
 }
 

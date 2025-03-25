@@ -21,70 +21,10 @@
         }
 
 
-
-        #dot {
-            height: 200px;
-            width: 300px;
-            color: black;
-            font-family: Courier, monospace;
-            font-size: larger;
-            position: relative;
-            left: 450px;
-            top: 1px;
-            border: 10px double rebeccapurple;
-
-
-        }
-
-        #first {
-            height: 90px;
-            width: 90px;
-            border-bottom: 13px solid orangered;
-            border-right: 13px solid blueviolet;
-            border-left: 13px solid yellow;
-            border-top: 13px solid green;
-            margin-left: 100px;
-            border-radius: 50%;
-            animation: mylaoder 2s ease-in-out 60ms infinite normal;
-            position: relative;
-        }
-
-        #skind {
-            height: 90px;
-            width: 90px;
-            border-bottom: 13px solid orangered;
-            border-right: 13px solid blueviolet;
-            border-left: 13px solid yellow;
-            border-top: 13px solid green;
-            margin-left: 100px;
-            border-radius: 50%;
-            animation: mylaoder 2s ease-in-out 60ms infinite normal;
-
-
-        }
-
-        @keyframes mylaoder {
-            from {
-                transform: (0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        #skind {
-            animation: mylaoder 2s ease-in-out 60ms infinite reverse;
-            position: relative;
-            left: 0px;
-
-        }
-
         #btn1 {
             height: 1rem;
             width: 4rem;
             position: relative;
-
             background-color: green;
             border: none;
 
@@ -92,18 +32,7 @@
 
         }
 
-        #btn2 {
-            height: 100%;
-            max-height: 4rem;
-            max-width: 4rem;
-            width: 100%;
-            background-color: orangered;
-            color: burlywood;
-            border: none;
-            /* border-radius: 40%; */
-            position: relative;
-
-        }
+   
 
         #output {
             height: 300px;
@@ -122,7 +51,6 @@
 
         #msg {
             border-bottom: 2px solid black;
-
             color: aliceblue;
         }
 
@@ -140,211 +68,23 @@
 
         }
 
-        .navbar {
-            width: 100%;
-            max-width: 13rem;
-            height: 50rem;
-            background-color: black;
-            position: fixed;
-            left: 0px;
-            top: 0px;
-            justify-content: center;
-            display: flex;
-            flex-wrap: wrap;
-        }
+      
+ 
 
-        hr {
-            margin-bottom: 0px;
-
-        }
-
-        .new {
-            height: 30px;
-            width: 177px;
-            background-color: aqua;
-            border: 2px solid black;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        .navcontaionr {
-            height: 80%;
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-wrap: wrap;
-
-        }
-
-        .pf {
-            font-size: large;
-        }
-
-        .notes {
-            height: fit-content;
-            width: 1000px;
-            margin-left: 170px;
-            background-color: blueviolet;
-            position: absolute;
-            top: 60px;
-
-
-        }
-        .nav {
-            height: 200px;
-            width: 100%;
-            
-            background-color: grey;
-            display: flex;
-           flex-wrap: wrap;
-
-        }
-        ol{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin-left: 130px;
-            margin-right: 130px;
-        }
-        li{
-         
-           margin: 20px;
-        }
-       #img1{
-            background-image: url(/firatpage.jpg);
-            background-size: contain;
-            height: 580px;
-            width: 400px;
-            margin-left: 150px;
-            margin-bottom: 8px;
-
-        }
-        #img2{
-            background-image: url(/first2page.jpg);
-            background-size: contain;
-            height: 580px;
-            width: 400px;
-        }
-        #img3{
-            background-image: url(/skind.jpg);
-            background-size: contain;
-            height: 580px;
-            width: 400px;
-            margin-left: 150px;
-            margin-bottom: 8px;
-        }
-        #img4{
-            background-image: url(/skind2.jpg);
-            background-size: contain;
-            height: 580px;
-            width: 400px;
-        }
-        #img5{
-            background-image: url(/third.jpg);
-            background-size: contain;
-            height: 580px;
-            width: 400px;
-            margin-left: 150px;
-            margin-bottom: 8px;
-        }
-        #img6{
-            background-image: url(/third2.jpg);
-            background-size: contain;
-            height: 580px;
-            width: 400px;
-        }
-       .cont{
-        background-color: gray;
-        width: 100%;
-        
-        
-        height: 100%;
-
-        display: flex;
-        flex-wrap: wrap;
-       
-       }
+      
     </style>
 </head>
 
 <body>
-    <HEAder>
-        <div class="navbar">
-            <h1>
-                JavaScript
-                <hr>
-            </h1>
-            <button id="btn1">Mode</button>
-            <div class="navcontaionr">
-                <div id="notes" class="new">
-                    <button id="notes" class="new">NOTES</button>
-                </div>
-                <div id="VoweL" class="new">
-                    <button id="VoweL" class="new">Count of Vowel</button>
-                </div>
-                <div class="new"></div>
-                <div class="new"></div>
-                <div class="new"></div>
-                <div class="new"></div>
-                <div class="new"></div>
-                <div class="new"></div>
-                <div class="new"></div>
-                <div class="new"></div>
-                <div class="new"></div>
-            </div>
-
-
-
-
-
-        </div>
-    </HEAder>
-
+   
     <div id="output">
+
         <p>Count of Vowel</p>
+        <button id="btn1">Mode</button>
         <p id="msg">Hi?</p>
         <input id="input" type="text" value="" placeholder="Enter input">
         <button id="submit" type="submit">Submit</button>
     </div>
-
-    <div class="notes">
-
-
-        <div class="nav">
-            <ol>
-               <li>Variables & Data types</li>
-               <li>Operators & Conditional Statment</li>
-               <li>Loop & Strings</li>
-               <li>Arrays</li>
-               <li>Function & Methods</li>
-               <li>DOM</li>
-               <li>Document Object Model</li>
-               <li>Events</li>
-               <li>Classes & Objects</li>
-               <li>Callbacks , Promises & Async Await</li>
-               <li>API Calls</li>
-            </ol>
-        </div>
-       <div class="cont"> 
-        <div id="img1" class="img"></div>
-       <div  id="img2" class="img"></div>
-       <div  id="img3" class="img"></div>
-       <div  id="img4" class="img"></div>
-       <div  id="img5" class="img"></div>
-       <div  id="img6" class="img"></div>
-     </div>
-
-    </div>
-    <!-- <div id="first"></div>
-    <div id="skind"></div>
-    <div class="love"></div> -->
-    <!-- <button id="btn1">Mode</button> -->
-
 </body>
 <script src="/script.js"> </script>
 
