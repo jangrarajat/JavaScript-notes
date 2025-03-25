@@ -30,6 +30,7 @@
             justify-content: center;
             align-items: center;
             gap: 19px;
+            z-index: 9;
 
         }
 
@@ -49,12 +50,13 @@
 
         /* vowel chaker part  */
         #output {
-            height: 500px;
-            width: 80%;
+            min-height: 585px;
+            height: fit-content;
+            width: 99%;
             
-            border-radius: 50px;
+            /* border-radius: 50px; */
             position: relative;
-            top: 90px;
+            top: 60px;
             background-color: rgb(137, 69, 200);
             display: flex;
             flex-direction: column;
@@ -65,8 +67,8 @@
         }
 
         #prjh{
-            font-family:Fantasy ;
-            
+            font-family:Fantasy;
+           
         }
 
 
@@ -89,12 +91,17 @@
 
 
         }
+        
+        
         @media (max-width:600px) {
             #input {
             height: 30px;
             width: 70%;
             text-align: center;
         }
+        /* #output {
+            height: 70%;
+        } */
 
         #submit {
             margin-top: 5px;
@@ -125,7 +132,16 @@
       
         }
 
-
+        /* footerdiv */
+        .footerdiv{
+            height: 50px;
+            width: 100%;
+            background-color:blueviolet;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            
+        }
 
     </style>
 </head>
@@ -135,7 +151,8 @@
         <div    class="fa-solid fa-house fa-lg" style="color: #63E6BE;"></div>
       
         <h2>JavaScript</h2>
-        <div    class="erro1 fa-solid fa-arrow-right fa-flip-horizontal fa-xs" style="color: #FFD43B;"></div><br>
+        <div    class="erro1 fa-solid fa-arrow-right fa-flip-horizontal fa-xs" style="color: #FFD43B;"></div>
+        <div  class="fa-solid fa-bars fa-2xl" style="color: #FFD43B;"></i></div>
         <div    class="erro2 fa-solid fa-arrow-right fa-xs" style="color: #FFD43B;"></div>
         <div id="btn1" class="fa-brands fa-slack fa-2xl" style="color: #63E6BE;" ></div>
     </div>
@@ -147,6 +164,11 @@
         <input id="input" type="text" value="" placeholder="Enter input">
         <button id="submit" type="submit">Submit</button>
     </div>
+    <footer>
+       <div class="footerdiv">
+
+       </div>
+    </footer>
 </body>
 <script src="/script.js"> </script>
 
@@ -154,6 +176,4 @@
 
 
 
-<i class="fa-solid fa-xmark"></i>
-<i class="fa-solid fa-bars"></i>
-<i class="fa-solid fa-house"></i>
+<!-- <i class="fa-solid fa-xmark"></i> -->
