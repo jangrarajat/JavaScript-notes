@@ -5,181 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        body {
-            background-color: rgb(93, 30, 164);
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            flex-direction: column;
-            align-items: center;
-        }
-
-          #heading{
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            color: #3bffd8;
-            text-shadow: chartreuse 0px 0px 10px , 0px 0px 10px , 0px 0px 20px;
-            font-weight: 90000000000;
-            font-style: oblique;
-           font-size: xx-large;
-        }
-        /* navbar part  */
-        .nav {
-            
-            height: 50px;
-            width: 100%;
-            background-color: blueviolet;
-            position: fixed;
-            top: 0px;
-            color: aliceblue;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 19px;
-            z-index: 9;
-
-        }
-
-        /* mode button  */
-        #btn1 {
-            height: 0rem;
-            width:  0rem;
-            border-radius: 50%;
-            position: relative;
-            /* background-color: blue; */
-            border: none;
-            
-
-
-        }
-
-
-        /* vowel chaker part  */
-        #output {
-            min-height: 640px;
-            height: fit-content;
-            width: 99%;
-            
-            /* border-radius: 50px; */
-            position: relative;
-            top: 60px;
-            background-color: rgb(137, 69, 200);
-            display: flex;
-            flex-direction: column;
-            font-size: 2em;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        #prjh{
-            font-family:Fantasy;
-           
-        }
-
-
-        #msg {
-            border-bottom: 2px solid black;
-            color: aliceblue;
-        }
-
-        #input {
-            height: 30px;
-            width: 40%;
-            text-align: center;
-        }
-
-        #submit {
-            margin-top: 5px;
-            height: 30px;
-            width: 40%;
-            background-color: skyblue;
-
-
-        }
-        
-        
-        @media (max-width:600px) {
-            #input {
-            height: 30px;
-            width: 70%;
-            text-align: center;
-        }
-        /* #output {
-            height: 500px;
-        } */
-
-        #submit {
-            margin-top: 5px;
-            height: 30px;
-            width: 70%;
-            background-color: skyblue;
-
-
-        }
-      
-        }
-        @media (min-width:1000px) {
-            #input {
-            height: 30px;
-            width: 30%;
-            text-align: center;
-        }
-
-        #submit {
-            margin-top: 5px;
-            height: 30px;
-            width: 20%;
-            background-color: skyblue;
-
-
-        }
-       
-      
-        }
-
-        /* footerdiv */
-        .footerdiv{
-            height: 50px;
-            width: 100%;
-            background-color:blueviolet;
-            position: fixed;
-            bottom: 0px;
-            left: 0px;
-            z-index: 9;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 100px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
     <div class="nav">
-        <div    class="fa-solid fa-house fa-lg" style="color: #63E6BE;"></div>
-      
+        <div class="fa-solid fa-house fa-lg" style="color: #63E6BE;"></div>
         <h2 id="heading">JavaScript</h2>
-        <div id="btn1" class="fa-brands fa-slack fa-2xl" style="color: #63E6BE;" ></div>
+        <div id="btn1" class="fa-brands fa-slack fa-2xl" style="color: #63E6BE;"></div>
     </div>
-
     <div id="output">
         <p id="prjh">Count of Vowel</p>
-       
         <p id="msg">Hi?</p>
         <input id="input" type="text" value="" placeholder="Enter input">
         <button id="submit" type="submit">Submit</button>
     </div>
+    <!-- list div  -->
+    <div class="listdiv">
+        <div class="option" style="border-radius: 5px 5px 0px 0px;">
+            <p>hi</p>
+        </div>
+
+        <div class="option">
+            <p>hi</p>
+        </div>
+
+        <div class="option">
+            <p>hi</p>
+        </div>
+
+        <div class="option">
+            <p>hi</p>
+        </div>
+
+        <div class="option">
+            <p>hi</p>
+        </div>
+
+        <div class="option">
+            <p>hi</p>
+        </div>
+
+        <div class="option">
+            <p>hi</p>
+        </div>
+
+
+
+
+
+
+        <div class="option" style="border-radius: 0px 0px 5px 5px;">
+            <p>hi</p>
+        </div>
+
+    </div>
     <footer>
-       <div class="footerdiv">
-        <div    class="erro1 fa-solid fa-arrow-right fa-flip-horizontal fa-xs" style="color: #FFD43B;"></div>
-        <div  class="fa-solid fa-bars fa-2xl" style="color: #FFD43B;"></i></div>
-        <div    class="erro2 fa-solid fa-arrow-right fa-xs" style="color: #FFD43B;"></div>
-       </div>
+        <div class="footerdiv">
+            <div class="erro1 fa-solid fa-arrow-right fa-flip-horizontal fa-xs" style="color: #FFD43B;"></div>
+            <div id="list" class=" fa-solid fa-bars fa-2xl" style="color: #FFD43B;"></i></div>
+            <div class="erro2 fa-solid fa-arrow-right fa-xs" style="color: #FFD43B;"></div>
+        </div>
     </footer>
 </body>
 <script src="/script.js"> </script>
