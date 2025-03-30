@@ -1,6 +1,4 @@
-
-
-
+ 
 let btn = document.querySelector("#btn1")
 let output = document.querySelector("#output")
 let mode = "light"
@@ -99,6 +97,6 @@ let vowelOutput = document.querySelector("#output")
 
   loginbtn.onclick = () =>{
    
-  
+   window.location.href = "login.html";
        
   }

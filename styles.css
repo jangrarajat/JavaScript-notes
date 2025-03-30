@@ -27,10 +27,10 @@ padding-right: 50px; */
     position: fixed;
     top: 0px;
     color: aliceblue;
-    display: flex;
+     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; 
     /* gap: 19px; */
     z-index: 9;
     /* padding-bottom: 3px; */
@@ -105,14 +105,13 @@ visibility: hidden;
         width: 70%;
         text-align: center;
     }
+    #srcbar{
+        width:50% ;
+    }
+  
 
-    /* #homebtn{
-        margin-right: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-self: flex-end; */
+
+
      }
     .navfnt{
         font-family: 'Courier New';
@@ -229,4 +228,39 @@ flex-direction: column;
     font-size: 16px;
    color: rgb(229, 229, 226);
    
+}
+
+.firstdiv{
+height: 50px;
+width: 48%;
+ 
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 30px;
+margin-right: 2px;
+/* flex-wrap: wrap; */
+}
+
+.skinddiv{
+    height: 50px;
+width: 48%;
+ 
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: end;
+/* background-color: chartreuse; */
+gap: 0px;
+
+}
+
+#list{
+    margin-right: 20px;
+}
+#btn1{
+    margin-right: 40px;
+}
+#srcdiv{
+    margin-right: 20px;
 }

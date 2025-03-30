@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(213, 216, 215);
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-top: 100px;
+
+}
+
+#containor{
+    height: 20rem;
+    width: 15rem;
+    background-color: rgba(255, 255, 255, 0.422);
+border: 1px solid black;
+border-radius: 2px;
+padding: 30px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+}
+
+h1{
+    margin: 15px;
+}
+input{
+    height: 2rem;
+
+}
+button{
+    height: 2rem;
+    background-color: chocolate;
+    border: none;
+   border-radius: 2px;
+}
+button:hover{
+    background-color: rgb(183, 127, 88)
+}
+button:active{
+    background-color: chocolate;
+}
+
+.errorp{
+    color: red;
+    font-family: cursive;
+    /* text-decoration: underline; */
+    
+}
