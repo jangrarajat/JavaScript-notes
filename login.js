@@ -1,5 +1,8 @@
 let btn = document.querySelector("#submitbtn")
 // let errormsg = document.querySelector(".errorp")
+
+
+
 let username = "123"
 let password = "123"
 btn.onclick = () => {
@@ -13,7 +16,7 @@ btn.onclick = () => {
 
   } else {
 
-    errormsg.innerText = "error ==> your username & password incorrect"
+    errormsg.innerText = "Error ==> your username & password incorrect"
 
   }
 
