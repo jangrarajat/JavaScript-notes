@@ -186,6 +186,7 @@ right: 60px;
         display: flex;
 flex-direction: column;
     align-items: center;
+    z-index: 9;
 }
 
  .option{
@@ -292,10 +293,10 @@ visibility: hidden;
 }
 /* my first game  */
 #first-game{
-    height: 400px;
-    width: 80%;
+    height: 380px;
+    width: 90%;
     max-width: 500px;
-    /* background-color: rgba(134, 65, 198, 0.886); */
+    background-color: rgba(134, 65, 198, 0.886);
     position: absolute;
     top: 100px;
     border-radius: 5px;
@@ -335,6 +336,7 @@ visibility: hidden;
 .user-option:active{
     background-color: orangered;
     color: white;
+    border-radius: 50%;
 }
 
 .score{
@@ -342,7 +344,7 @@ visibility: hidden;
     margin-left: 40px;
 }
 .player{
-    font-size: 1.3rem;
+    
    font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -350,14 +352,50 @@ visibility: hidden;
    
   border-radius: 10px;
 font-family: Arial, Helvetica, sans-serif;
+height: fit-content;
+font-size:1.4rem ;
  
 
 }
 
 #ans{
-    background-color: orangered;
+   
     text-align: center;
     border-radius: 10px;
 
 
 }
+.game-heading{
+    position: absolute;
+    background-color:blueviolet;
+    top: 60px;
+    height: 50px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.restrt-game-btn{
+    position: relative;
+    background-color:blueviolet;
+    top: 3px;
+    height: 50px;
+    width: 93%;
+    max-width: 500px;
+   border-radius: 0px 0px 10px 10px; 
+}
+#restrt-btn{
+    width: 100%;
+    height: 100%;
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+

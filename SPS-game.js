@@ -5,6 +5,9 @@ let winmsg = document.querySelector("#result")
 let yourScore = document.querySelector("#Your-Score")
 let computerScore = document.querySelector("#Computer-Score")
 let ans = document.querySelector("#ans")
+let restrtbtn = document.querySelector("#restrt-btn")
+
+
 
 
 // Computer-choice 
@@ -18,6 +21,8 @@ const computerGen = () => {
 const playGame = (userOption) => {
 
     const cmpCh = computerGen();
+
+   
 
     if (userOption === cmpCh) {
 
@@ -55,13 +60,10 @@ const playGame = (userOption) => {
         computerScore.innerText = computerChoice;
         winmsg.innerText = `You are Loose
           (Computer choice ${cmpCh})`
-    }
-    if(userChoice === 10 || computerChoice === 10 ) {
-        userChoice = 0;
-        computerChoice = 0;
-        winmsg.innerText = "  Restart Your Game ! "
+
         
     }
+   
 }
 
 
@@ -78,4 +80,13 @@ gamebtn.forEach((gamebtn) => {
 
 
 
+
+restrtbtn.onclick = () =>{
+
+    yourScore.innerText = 0;
+    computerScore.innerText = 0;
+     winmsg.innerText = "Restart"
+     userChoice = 0
+      computerChoice = 0
+}
 
