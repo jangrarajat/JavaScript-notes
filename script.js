@@ -75,8 +75,7 @@ let vowelOutput = document.querySelector("#output")
   vowelChakerbtn.onclick = ( ) =>{                 
                                        
    if (vowelChaker === "yesvowelChaker"){
-      
-     
+           
      console.log("hi")
       document.querySelector("#output").style.visibility = "visible";
       vowelChaker = "novowelChaker"
@@ -101,5 +100,15 @@ let vowelOutput = document.querySelector("#output")
        
   }
 
-
- 
+//    let doc = "okgame"
+// document.querySelector("#firstgame")
+//   firstgame.onclick = () => {
+//    if(doc === "okgame"){
+//       doc = "nogame"
+//       document.querySelectorAll("#stoneGame").style.visibility = "visible"
+//    }else {
+//       doc = "okgame"
+//       document.querySelectorAll("#stoneGame").style.visibility = " hidden"
+//    }
+    
+//   } 
