@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main {
+            margin-top: 20px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(20, 19, 19);
+            height: 60vmin;
+            width: 60vmin;
+            border-radius: 10px;
+
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .data {
+
+            height: 30%;
+            width: 100%;
+            position: relative;
+            top: 190px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .event-div {
+            width: 30%;
+            height: 30%;
+            border: 3px solid white;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>keyboard events</h1>
+        <div class="data">
+            <div class="event-div">
+                <p>Key</p>
+            </div>
+            <div class="event-div">
+                <p>KeyCode</p>
+            </div>
+            <div class="event-div">
+                <p>Code</p>
+            </div>
+            <div class="event-div">
+                <p></p>
+            </div>
+            <div class="event-div">
+                <p></p>
+            </div>
+            <div class="event-div">
+                <p></p>
+            </div>
+        </div>
+    </main>
+    <script>
+        let data = document.querySelector(".data")
+
+        window.addEventListener("keydown", (e) => {
+             data.innerHTML = `
+                <div class="event-div">
+                <p>Key</p>
+            </div>
+            <div class="event-div">
+                <p>KeyCode</p>
+            </div>
+            <div class="event-div">
+                <p>Code</p>
+            </div>
+            <div class="event-div">
+                <p>${e.key}</p> 
+            </div>
+            <div class="event-div">
+                <p>${e.keyCode}</p>
+            </div>
+            <div class="event-div">
+                <p>${e.code}</p>
+            </div>
+             `
+           
+        })
+    </script>
+</body>
+
+</html>
